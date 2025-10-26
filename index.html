@@ -1,136 +1,114 @@
-<div style="font-family: 'Roboto', sans-serif; color:#333333; padding:20px; max-width:900px; margin:auto; line-height:1.6; overflow-x:hidden;">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home Blood Collection - High Wycombe & Buckinghamshire</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  body { font-family: 'Roboto', sans-serif; margin:0; padding:0; background:#F9F9F9; color:#333; }
+  a { text-decoration:none; }
+  /* Hero Section */
+  .hero { position:relative; text-align:center; color:white; padding:80px 20px; 
+          background:url('https://images.pexels.com/photos/9408863/pexels-photo-9408863.jpeg') center/cover no-repeat; 
+          border-radius:0 0 30px 30px; }
+  .hero::before { content:""; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.45); }
+  .hero-content { position:relative; z-index:1; max-width:900px; margin:auto; }
+  .hero h1 { font-size:2.5em; margin-bottom:20px; }
+  .hero p { font-size:1.3em; margin-bottom:30px; }
+  .hero .btn { background:#FFC107; color:#fff; padding:18px 35px; border-radius:8px; font-weight:bold; font-size:1em; transition:0.3s; }
+  .hero .btn:hover { transform:scale(1.05); }
 
-<!-- Hero Section -->
-<div style="position:relative; text-align:center; color:white; border-radius:8px; overflow:hidden; margin-bottom:30px; padding:60px 20px; 
-background: linear-gradient(135deg, #1E88E5, #42A5F5, #1E88E5, #42A5F5), url('https://images.pexels.com/photos/9408863/pexels-photo-9408863.jpeg') center/cover no-repeat; 
-background-blend-mode: overlay; animation: gradientShift 15s ease infinite, pulse 6s infinite alternate;">
-  <div style="position:absolute; top:0; left:-100%; width:200%; height:100%; background:linear-gradient(120deg, rgba(255,255,255,0.05), rgba(255,255,255,0.25), rgba(255,255,255,0.05)); transform:skewX(-20deg); animation: shine 4s infinite;"></div>
-  <div style="position:relative; width:90%; margin:auto; opacity:0; animation: fadeIn 1.5s forwards;">
-    <h1 style="font-size:2.4em; margin-bottom:10px;">Home Blood Collection – High Wycombe & Buckinghamshire</h1>
-    <p style="font-size:1.2em; margin-bottom:25px;">Safe. Hygienic. Convenient. Professional venepuncture at your doorstep, 24×7.</p>
-    <a href="#booking" class="scroll-button hero-button" style="background:#FFC107; color:white; padding:18px 35px; border-radius:10px; text-decoration:none; font-weight:bold; display:inline-block; font-size:1em;">Book a Collection</a>
+  /* Sections */
+  section { padding:50px 20px; max-width:900px; margin:auto; border-radius:8px; margin-bottom:30px; background:white; box-shadow:0 4px 15px rgba(0,0,0,0.05); }
+  section h2 { color:#1E88E5; font-size:1.8em; margin-bottom:15px; }
+  section p, section li { font-size:1.1em; line-height:1.6; }
+  section ul { padding-left:20px; }
+  .whatsapp-btn { background:#25D366; color:#fff; padding:15px 30px; border-radius:8px; font-weight:bold; display:inline-block; transition:0.3s; }
+  .whatsapp-btn:hover { transform:scale(1.05); }
+
+  /* Google Form iframe */
+  iframe { width:100%; border-radius:8px; border:none; min-height:850px; }
+
+  /* Responsive */
+  @media(max-width:600px) {
+    .hero h1 { font-size:2em; }
+    .hero p { font-size:1.1em; }
+    section h2 { font-size:1.5em; }
+    section p, section li { font-size:1em; }
+    .hero .btn, .whatsapp-btn { padding:14px 25px; font-size:0.95em; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Hero -->
+<div class="hero">
+  <div class="hero-content">
+    <h1>Home Blood Collection – High Wycombe & Buckinghamshire</h1>
+    <p>Safe. Hygienic. Convenient. Professional venepuncture at your doorstep, 24×7.</p>
+    <a href="#booking" class="btn">Book a Collection</a>
   </div>
 </div>
 
 <!-- About Section -->
-<div class="fade-section" style="padding:30px 20px; background:white; border-radius:8px; margin-bottom:20px;">
-<h2 style="color:#1E88E5; font-size:1.5em;">About the Service</h2>
-<p>Home Blood Collection provides doorstep venepuncture across High Wycombe, Buckinghamshire, and surrounding areas. Every visit follows strict hygiene and safety standards using sterile, single-use equipment.</p>
-<ul style="padding-left:20px;">
-<li>GP and hospital-requested tests</li>
-<li>Private laboratory testing</li>
-<li>Company health checks</li>
-<li>Insurance and medical assessments</li>
-</ul>
-<p>Our focus is comfort, precision, and reliability from start to finish.</p>
-</div>
+<section id="about">
+  <h2>About the Service</h2>
+  <p>We provide doorstep venepuncture across High Wycombe, Buckinghamshire, and surrounding areas. Every visit follows strict hygiene and safety standards using sterile, single-use equipment.</p>
+  <ul>
+    <li>GP and hospital-requested tests</li>
+    <li>Private laboratory testing</li>
+    <li>Company health checks</li>
+    <li>Insurance and medical assessments</li>
+  </ul>
+</section>
 
-<!-- Who We Are Section -->
-<div class="fade-section" style="background:white; padding:30px 20px; border-radius:8px; margin-bottom:20px;">
-<h2 style="color:#1E88E5; font-size:1.5em;">Who We Are</h2>
-<p>We are Level 3 CPD accredited, fully trained and certified phlebotomists. Fully insured and CQC regulated, ensuring the highest professional standards.</p>
-</div>
+<!-- Who We Are -->
+<section>
+  <h2>Who We Are</h2>
+  <p>We are Level 3 CPD accredited, fully trained and certified phlebotomists. Fully insured and CQC regulated, ensuring the highest professional standards.</p>
+</section>
 
-<!-- Service Area / Timings -->
-<div class="fade-section" style="background:#F9F9F9; padding:30px 20px; border-radius:8px; margin-bottom:20px;">
-<h2 style="color:#1E88E5; font-size:1.5em;">Service Area & Timings</h2>
-<p>Coverage: High Wycombe, Hazlemere, Handy Cross, Marlow, Aylesbury, Amersham, and nearby towns.</p>
-<p>Hours: 24×7, all seven days — early-morning and late-night appointments available on request.</p>
-</div>
+<!-- Service Area & Timings -->
+<section>
+  <h2>Service Area & Timings</h2>
+  <p>Coverage: High Wycombe, Hazlemere, Handy Cross, Marlow, Aylesbury, Amersham, and nearby towns.</p>
+  <p>Hours: 24×7, all seven days — early-morning and late-night appointments available on request.</p>
+</section>
 
 <!-- Booking Form -->
-<div id="booking" class="fade-section" style="padding:30px 20px; background:white; border-radius:8px; margin-bottom:20px;">
-<h2 style="color:#1E88E5; font-size:1.5em;">Book a Collection</h2>
-<p>Fill out the form below, and we’ll confirm your appointment by phone or WhatsApp.</p>
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf4D15v4xetOE0G86M8rdL8iVfp6ySZfPma6a4xwxDvsru2dg/viewform?embedded=true" width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0" style="border-radius:8px;">Loading…</iframe>
-</div>
+<section id="booking">
+  <h2>Book a Collection</h2>
+  <p>Fill out the form below, and we’ll confirm your appointment by phone or WhatsApp.</p>
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf4D15v4xetOE0G86M8rdL8iVfp6ySZfPma6a4xwxDvsru2dg/viewform?embedded=true"></iframe>
+</section>
 
-<!-- Need Help / Chat Section -->
-<div class="fade-section" style="padding:30px 20px; background:#1E88E5; color:white; text-align:center; border-radius:8px; margin:30px 0;">
-<h2 style="font-size:1.5em; margin-bottom:15px;">Need Help or Have Any Questions?</h2>
-<p style="margin-bottom:20px;">Click the button below to chat with us directly on WhatsApp.</p>
-<a href="https://wa.me/+447503946200" target="_blank" class="chat-button" style="background:#FFC107; color:white; padding:18px 35px; border-radius:10px; text-decoration:none; font-weight:bold; display:inline-block; font-size:1em;">Chat Now</a>
-</div>
+<!-- WhatsApp Help -->
+<section style="text-align:center; background:#1E88E5; color:white;">
+  <h2>Need Help or Have Any Questions?</h2>
+  <p>Click the button below to chat with us directly on WhatsApp.</p>
+  <a href="https://wa.me/+447503946200" target="_blank" class="whatsapp-btn">Chat Now</a>
+</section>
 
 <!-- Contact Section -->
-<div class="fade-section" style="padding:30px 20px; background:#F9F9F9; border-radius:8px; margin-bottom:20px;">
-<h2 style="color:#1E88E5; font-size:1.5em;">Contact</h2>
-<p><strong>Paras Punia</strong><br>
-Call / WhatsApp: <a href="https://wa.me/447503946200" style="color:#1E88E5;">+44 7503 946200</a><br>
-Email: <a href="mailto:punia.paras@gmail.com" style="color:#1E88E5;">punia.paras@gmail.com</a><br>
-Based in: High Wycombe, Buckinghamshire</p>
-</div>
+<section>
+  <h2>Contact</h2>
+  <p><strong>Paras Punia</strong><br>
+  Call / WhatsApp: <a href="https://wa.me/447503946200" style="color:#1E88E5;">+44 7503 946200</a><br>
+  Email: <a href="mailto:punia.paras@gmail.com" style="color:#1E88E5;">punia.paras@gmail.com</a><br>
+  Based in: High Wycombe, Buckinghamshire</p>
+</section>
 
 <!-- Safety Section -->
-<div class="fade-section" style="padding:30px 20px; background:white; border-radius:8px; margin-bottom:20px;">
-<h2 style="color:#1E88E5; font-size:1.5em;">Professional Care & Safety</h2>
-<ul style="padding-left:20px;">
-<li>Trained and certified in venepuncture and sample handling</li>
-<li>Single-use sterile equipment for every client</li>
-<li>PPE worn at all times during collection</li>
-<li>Samples handled and transported following professional protocols</li>
-</ul>
-</div>
-</div>
+<section>
+  <h2>Professional Care & Safety</h2>
+  <ul>
+    <li>Trained and certified in venepuncture and sample handling</li>
+    <li>Single-use sterile equipment for every client</li>
+    <li>PPE worn at all times during collection</li>
+    <li>Samples handled and transported following professional protocols</li>
+  </ul>
+</section>
 
-<!-- Styles & Animations -->
-<style>
-body {
-  background-color: #F9F9F9;
-  background-image: radial-gradient(circle, rgba(0,0,0,0.01) 1px, transparent 1px);
-  background-size: 40px 40px;
-}
-
-/* Section fade-in on scroll */
-.fade-section { opacity:0; transform: translateY(20px); transition: all 1s ease; }
-.fade-section.visible { opacity:1; transform: translateY(0); }
-
-/* Hero fade-in */
-@keyframes fadeIn { from { opacity:0; transform: translateY(20px); } to { opacity:1; transform: translateY(0); } }
-
-/* Hero shine animation */
-@keyframes shine { 0% { left:-100%; } 100% { left:100%; } }
-
-/* Hero pulse */
-@keyframes pulse { 0% { filter:brightness(1); } 50% { filter:brightness(1.05); } 100% { filter:brightness(1); } }
-
-/* Hero animated gradient */
-@keyframes gradientShift { 0% { background-position:0% 50%; } 50% { background-position:100% 50%; } 100% { background-position:0% 50%; } }
-
-/* Buttons hover + scale */
-.hero-button, .chat-button { transition: transform 0.3s ease, box-shadow 0.3s ease; }
-.hero-button:hover, .chat-button:hover { transform: scale(1.05); box-shadow:0 6px 20px rgba(0,0,0,0.25); }
-
-/* Chat sparkle */
-@keyframes sparkle { 0%,100% { box-shadow:0 6px 20px rgba(255,255,255,0); } 50% { box-shadow:0 6px 20px rgba(255,255,255,0.3); } }
-.chat-button { position:relative; overflow:hidden; z-index:1; animation:sparkle 2.5s infinite alternate; }
-
-/* Diagonal shimmer on hover */
-.chat-button::after {
-  content:""; position:absolute; top:-50%; left:-75%; width:50%; height:200%; background:rgba(255,255,255,0.2);
-  transform:rotate(25deg); transition:all 0.3s ease;
-}
-.chat-button:hover::after { animation: shimmer 2s infinite; }
-@keyframes shimmer { 0% { left:-75%; } 100% { left:125%; } }
-
-/* Mobile-friendly hero text and buttons */
-@media only screen and (max-width: 600px) {
-  .fade-section h2 { font-size: 1.3em !important; }
-  .fade-section p, .fade-section li { font-size: 1em !important; }
-  .hero-button, .chat-button { padding: 14px 25px !important; font-size: 0.95em !important; }
-  div[style*="text-align:center; color:white; border-radius:8px; overflow:hidden; margin-bottom:30px;"] h1 { font-size: 1.8em !important; }
-  div[style*="text-align:center; color:white; border-radius:8px; overflow:hidden; margin-bottom:30px;"] p { font-size: 1em !important; }
-}
-</style>
-
-<!-- Scripts -->
-<script>
-// Smooth scroll
-document.querySelectorAll('a.scroll-button').forEach(function(button){
-  button.addEventListener('click', function(e){
-    e.preventDefault();
-    document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
-  });
-});
-
-// Fade in
+</body>
+</html>
